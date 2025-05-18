@@ -12,6 +12,14 @@ with open('model/naive_bayes_model.pkl', 'rb') as f:
 def home():
     return render_template('index.html')
 
+@app.route("/diagnosis")
+def diagnosis():
+    return render_template('diagnosis.html')
+
+@app.route("/assessment")
+def assessment():
+    return render_template('assessment.html')
+
 @app.route('/predict', methods=['POST'])
 def predict():
     symptoms = request.form.getlist('symptoms')
