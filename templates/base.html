@@ -12,133 +12,160 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Roboto:wght@400;500;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <link
-      rel="stylesheet"
-      href="{{ url_for('static', filename='css/diagnosis-style.css') }}"
-    />
+    <link href="/static/output.css" rel="stylesheet" />
   </head>
-  <body>
-    <nav>
-      <div class="nav-container">
-        <h1>Diagnosis</h1>
-        <div class="nav-left-side">
-          <div class="search-box">search here</div>
+  <body
+    class="grid grid-cols-12 grid-rows-12 h-screen bg-slate-100 font-['Poppins']"
+  >
+    <nav
+      class="col-start-3 col-end-13 bg-white flex items-center justify-center font-outfit"
+    >
+      <div class="w-[90%] flex items-center justify-between h-full">
+        <h1 class="font-semibold text-2xl">Diagnosis</h1>
+        <div class="flex items-center justify-between h-full w-[40%]">
+          <div class="bg-[#f5f7fa] w-[85%] p-2.5 rounded-2xl">search here</div>
           <div class="profile">
             <img
               src="{{ url_for('static', filename='images/profile-icon.png') }}"
               alt=""
+              class="w-10"
             />
           </div>
         </div>
       </div>
     </nav>
-    <aside>
+    <aside
+      class="col-start-1 col-end-3 row-start-1 row-end-13 bg-[#0d0521] py-5 pl-8 font-headline text-white"
+    >
       <a href="{{ url_for('home')}}">
-        <div class="icon">
+        <div class="flex items-center">
           <img
             src="{{ url_for('static', filename='images/logo.svg') }}"
             alt=""
           />
-          <h2>Iconsult</h2>
+          <h2 class="ml-2">Iconsult</h2>
         </div></a
       >
-      <div class="sidebar">
-        <ul>
-          <li class="selected">Diagnosis</li>
-          <li>Dashboard</li>
-          <li>My prescriptions</li>
-          <li>Appointments</li>
-          <li>Messages</li>
-          <li>Find a doctor</li>
-          <li>Feedback</li>
+      <div class="sidebar mt-10">
+        <ul class="flex flex-col gap-5 list-none p-0 text-base">
+          <li class="bg-[#643dff] py-2.5 rounded-xl w-[90%] pl-5">Diagnosis</li>
+          <li class="pl-5">Dashboard</li>
+          <li class="pl-5">My prescriptions</li>
+          <li class="pl-5">Appointments</li>
+          <li class="pl-5">Messages</li>
+          <li class="pl-5">Find a doctor</li>
+          <li class="pl-5">Feedback</li>
         </ul>
       </div>
     </aside>
     {% block body %}{% endblock %}
-    <section>
-      <h3>Pre-checkup Progress</h3>
-      <div class="calendar">
-        <span class="dates current">
-          <span class="day">THU</span>
-          <span class="date">23</span>
+    <section
+      class="col-start-10 col-end-12 row-start-3 row-end-12 bg-white w-[350px] rounded-2xl p-5 flex flex-col font-outfit"
+    >
+      <h3 class="font-semibold text-[1.4rem]">Pre-checkup Progress</h3>
+      <div class="mt-5 flex justify-between">
+        <span
+          class="flex flex-col items-center py-2.5 px-2.5 w-[60px] h-[70px] font-semibold bg-[#643dff] rounded-t-xl text-white text-sm"
+        >
+          <span>THU</span>
+          <span class="mt-1">23</span>
         </span>
-        <span class="dates">
-          <span class="day">FRI</span>
-          <span class="date">24</span>
+        <span
+          class="flex flex-col items-center py-2.5 px-2.5 w-[60px] h-[70px] font-semibold text-sm"
+        >
+          <span>FRI</span>
+          <span class="mt-1 text-[#643dff]">24</span>
         </span>
-        <span class="dates">
-          <span class="day">SAT</span>
-          <span class="date">25</span>
+        <span
+          class="flex flex-col items-center py-2.5 px-2.5 w-[60px] h-[70px] font-semibold text-sm"
+        >
+          <span>SAT</span>
+          <span class="mt-1 text-[#643dff]">25</span>
         </span>
-        <span class="dates">
-          <span class="day">SUN</span>
-          <span class="date">26</span>
+        <span
+          class="flex flex-col items-center py-2.5 px-2.5 w-[60px] h-[70px] font-semibold text-sm"
+        >
+          <span>SUN</span>
+          <span class="mt-1 text-[#643dff]">26</span>
         </span>
-        <span class="dates">
-          <span class="day">Mon</span>
-          <span class="date">27</span>
+        <span
+          class="flex flex-col items-center py-2.5 px-2.5 w-[60px] h-[70px] font-semibold text-sm"
+        >
+          <span>Mon</span>
+          <span class="mt-1 text-[#643dff]">27</span>
         </span>
       </div>
-      <div class="procedure">
-        <div class="steps">
+      <div class="mt-6 flex flex-col gap-8">
+        <div class="flex items-center justify-around">
           <img
             src="{{ url_for('static', filename='images/step-one.png') }}"
             alt=""
           />
-          <div class="step-name-and-description">
-            <span class="step-name">Current step</span>
-            <span class="step-description">Symptoms description</span>
+          <div class="flex flex-col w-[60%] gap-1 text-xs">
+            <span>Current step</span>
+            <span class="text-[#643dff] font-semibold"
+              >Symptoms description</span
+            >
           </div>
         </div>
-        <div class="steps">
+        <div class="flex items-center justify-around">
           <img
             src="{{ url_for('static', filename='images/step-two.svg') }}"
             alt=""
           />
-          <div class="step-name-and-description">
-            <span class="step-name">Step 2</span>
-            <span class="step-description">Medical history</span>
+          <div class="flex flex-col w-[60%] gap-1 text-xs">
+            <span>Step 2</span>
+            <span class="text-[#643dff] font-semibold">Medical history</span>
           </div>
         </div>
-        <div class="steps">
+        <div class="flex items-center justify-around">
           <img
             src="{{ url_for('static', filename='images/step-three.svg') }}"
             alt=""
           />
-          <div class="step-name-and-description">
-            <span class="step-name">Step 3</span>
-            <span class="step-description">AI condition assessment</span>
+          <div class="flex flex-col w-[60%] gap-1 text-xs">
+            <span>Step 3</span>
+            <span class="text-[#643dff] font-semibold"
+              >AI condition assessment</span
+            >
           </div>
         </div>
-        <div class="steps">
+        <div class="flex items-center justify-around">
           <img
             src="{{ url_for('static', filename='images/step-one.png') }}"
             alt=""
           />
-          <div class="step-name-and-description">
-            <span class="step-name">Step 4</span>
-            <span class="step-description"
+          <div class="flex flex-col w-[60%] gap-1 text-xs">
+            <span>Step 4</span>
+            <span class="text-[#643dff] font-semibold"
               >Hospital and doctor recommendation</span
             >
           </div>
         </div>
-        <div class="steps">
+        <div class="flex items-center justify-around">
           <img
             src="{{ url_for('static', filename='images/step-five.svg') }}"
             alt=""
           />
-          <div class="step-name-and-description">
-            <span class="step-name">Final step</span>
-            <span class="step-description">Appoinment Scheduling</span>
+          <div class="flex flex-col w-[60%] gap-1 text-xs">
+            <span>Final step</span>
+            <span class="text-[#643dff] font-semibold"
+              >Appoinment Scheduling</span
+            >
           </div>
         </div>
       </div>
-      <a href="{{ url_for('assessment')}}" class="assessment"
-        ><button id="proceed-button">Proceed</button></a
-      >
+      <a href="{{ url_for('assessment')}}" class="self-end">
+        <button
+          id="proceed-button"
+          class="mt-6 bg-[#643dff] border-none py-2.5 px-7 rounded-xl font-outfit text-white text-sm font-semibold hover:bg-[#4703bb]"
+        >
+          Proceed
+        </button>
+      </a>
     </section>
     {% block script %} {% endblock %}
   </body>
