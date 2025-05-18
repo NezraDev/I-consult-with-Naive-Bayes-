@@ -1,0 +1,60 @@
+{
+  "Flu": [
+    ["fever", "cough"],
+    ["fever", "cough", "sore throat"],
+    ["cough", "sore throat"]
+  ],
+  "Migraine": [
+    ["headache", "blurred vision"],
+    ["headache", "nausea"],
+    ["headache", "light sensitivity"]
+  ],
+  "Measles": [
+    ["fever", "rash"],
+    ["rash", "runny nose"]
+  ],
+  "Heart Disease": [
+    ["chest pain", "shortness of breath"],
+    ["chest pain", "fatigue"]
+  ],
+  "Diabetes": [
+    ["fatigue", "weight loss", "frequent urination"],
+    ["frequent urination", "blurred vision"]
+  ],
+  "Food Poisoning": [
+    ["nausea", "vomiting", "diarrhea"],
+    ["vomiting", "stomach pain"]
+  ],
+  "Allergy": [
+    ["itchy eyes", "sneezing", "runny nose"],
+    ["sneezing", "itchy eyes"]
+  ],
+  "Arthritis": [
+    ["joint pain", "stiffness", "swelling"],
+    ["joint pain", "morning stiffness"]
+  ],
+  "IBS": [
+    ["abdominal pain", "bloating", "constipation"],
+    ["bloating", "gas", "diarrhea"]
+  ],
+  "Common Cold": [
+    ["sore throat", "cough", "runny nose"],
+    ["sore throat", "congestion"]
+  ],
+  "Dengue": [
+    ["high fever", "muscle pain", "bleeding"],
+    ["fever", "rash", "joint pain"]
+  ],
+  "Alzheimer's Disease": [
+    ["memory loss", "confusion"],
+    ["confusion", "difficulty speaking"]
+  ],
+  "Anxiety Disorder": [
+    ["anxiety", "insomnia", "palpitations"],
+    ["restlessness", "palpitations"]
+  ],
+  "Depression": [
+    ["depressed mood", "loss of interest", "fatigue"],
+    ["fatigue", "hopelessness"]
+  ]
+}
