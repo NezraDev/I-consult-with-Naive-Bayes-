@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Diagnosis</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="{{ url_for('static', filename='images/logo.svg') }}"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/diagnosis-style.css') }}"
+    />
+  </head>
+  <body>
+    <nav>
+      <div class="nav-container">
+        <h1>Diagnosis</h1>
+        <div class="nav-left-side">
+          <div class="search-box">search here</div>
+          <div class="profile">
+            <img
+              src="{{ url_for('static', filename='images/profile-icon.png') }}"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </nav>
+    <aside>
+      <a href="{{ url_for('home')}}">
+        <div class="icon">
+          <img
+            src="{{ url_for('static', filename='images/logo.svg') }}"
+            alt=""
+          />
+          <h2>Iconsult</h2>
+        </div></a
+      >
+      <div class="sidebar">
+        <ul>
+          <li class="selected">Diagnosis</li>
+          <li>Dashboard</li>
+          <li>My prescriptions</li>
+          <li>Appointments</li>
+          <li>Messages</li>
+          <li>Find a doctor</li>
+          <li>Feedback</li>
+        </ul>
+      </div>
+    </aside>
+    {% block body %}{% endblock %}
+    <section>
+      <h3>Pre-checkup Progress</h3>
+      <div class="calendar">
+        <span class="dates current">
+          <span class="day">THU</span>
+          <span class="date">23</span>
+        </span>
+        <span class="dates">
+          <span class="day">FRI</span>
+          <span class="date">24</span>
+        </span>
+        <span class="dates">
+          <span class="day">SAT</span>
+          <span class="date">25</span>
+        </span>
+        <span class="dates">
+          <span class="day">SUN</span>
+          <span class="date">26</span>
+        </span>
+        <span class="dates">
+          <span class="day">Mon</span>
+          <span class="date">27</span>
+        </span>
+      </div>
+      <div class="procedure">
+        <div class="steps">
+          <img
+            src="{{ url_for('static', filename='images/step-one.png') }}"
+            alt=""
+          />
+          <div class="step-name-and-description">
+            <span class="step-name">Current step</span>
+            <span class="step-description">Symptoms description</span>
+          </div>
+        </div>
+        <div class="steps">
+          <img
+            src="{{ url_for('static', filename='images/step-two.svg') }}"
+            alt=""
+          />
+          <div class="step-name-and-description">
+            <span class="step-name">Step 2</span>
+            <span class="step-description">Medical history</span>
+          </div>
+        </div>
+        <div class="steps">
+          <img
+            src="{{ url_for('static', filename='images/step-three.svg') }}"
+            alt=""
+          />
+          <div class="step-name-and-description">
+            <span class="step-name">Step 3</span>
+            <span class="step-description">AI condition assessment</span>
+          </div>
+        </div>
+        <div class="steps">
+          <img
+            src="{{ url_for('static', filename='images/step-one.png') }}"
+            alt=""
+          />
+          <div class="step-name-and-description">
+            <span class="step-name">Step 4</span>
+            <span class="step-description"
+              >Hospital and doctor recommendation</span
+            >
+          </div>
+        </div>
+        <div class="steps">
+          <img
+            src="{{ url_for('static', filename='images/step-five.svg') }}"
+            alt=""
+          />
+          <div class="step-name-and-description">
+            <span class="step-name">Final step</span>
+            <span class="step-description">Appoinment Scheduling</span>
+          </div>
+        </div>
+      </div>
+      <a href="{{ url_for('assessment')}}" class="assessment"
+        ><button id="proceed-button">Proceed</button></a
+      >
+    </section>
+    {% block script %} {% endblock %}
+  </body>
+</html>
