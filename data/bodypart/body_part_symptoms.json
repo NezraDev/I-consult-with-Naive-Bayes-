@@ -18,50 +18,38 @@
     "sleep changes",
     "appetite changes"
   ],
-  "left-ear": [
-    "left ear pain",
-    "left hearing loss",
-    "left ear discharge",
-    "left ear itching",
-    "left ear fullness"
-  ],
-  "right-ear": [
-    "right ear pain",
-    "right hearing loss",
-    "right ear discharge",
-    "right ear itching",
-    "right ear fullness"
+
+  "ear": [
+    "ear pain",
+    "hearing loss",
+    "ear discharge",
+    "ear itching",
+    "ear fullness"
   ],
   "neck": [
-    "neck pain",
-    "neck stiffness",
-    "neck swelling",
-    "neck spasms",
-    "neck tenderness",
+    "pain",
+    "stiffness",
+    "swelling",
+    "spasms",
+    "tenderness",
     "sore throat"
   ],
   "chest": [
-    "chest pain",
-    "chest tightness",
+    "pain",
+    "tightness",
     "shortness of breath",
     "palpitations",
-    "chest pressure",
+    "pressure",
     "sweating",
     "trembling"
   ],
-  "right-shoulder": [
-    "right shoulder pain",
-    "right shoulder stiffness",
-    "right shoulder weakness",
-    "right shoulder popping",
-    "right shoulder swelling"
-  ],
-  "left-shoulder": [
-    "left shoulder pain",
-    "left shoulder stiffness",
-    "left shoulder weakness",
-    "left shoulder popping",
-    "left shoulder swelling"
+
+  "shoulder": [
+    "shoulder pain",
+    "shoulder stiffness",
+    "shoulder weakness",
+    "shoulder popping",
+    "shoulder swelling"
   ],
   "abdominal": ["abdominal pain", "bloating", "nausea", "vomiting", "diarrhea"],
   "pelvic": [
@@ -72,96 +60,55 @@
     "pelvic heaviness",
     "frequent urination"
   ],
-  "left-thigh": [
-    "left thigh pain",
-    "left thigh numbness",
-    "left thigh swelling",
-    "left thigh weakness",
-    "left thigh cramping"
+
+  "thigh": [
+    "thigh pain",
+    "thigh numbness",
+    "thigh swelling",
+    "thigh weakness",
+    "thigh cramping"
   ],
-  "right-thigh": [
-    "right thigh pain",
-    "right thigh numbness",
-    "right thigh swelling",
-    "right thigh weakness",
-    "right thigh cramping"
+
+  "knee": [
+    "knee pain",
+    " knee swelling",
+    " knee stiffness",
+    " knee instability",
+    " knee clicking"
   ],
-  "left-knee": [
-    "left knee pain",
-    "left knee swelling",
-    "left knee stiffness",
-    "left knee instability",
-    "left knee clicking"
+
+  "leg": [
+    "leg pain",
+    "leg swelling",
+    "leg cramps",
+    "leg numbness",
+    "leg weakness"
   ],
-  "right-knee": [
-    "right knee pain",
-    "right knee swelling",
-    "right knee stiffness",
-    "right knee instability",
-    "right knee clicking"
+
+  "foot": [
+    "foot pain",
+    "foot swelling",
+    "foot numbness",
+    "foot tingling",
+    "foot weakness"
   ],
-  "left-leg": [
-    "left leg pain",
-    "left leg swelling",
-    "left leg cramps",
-    "left leg numbness",
-    "left leg weakness"
-  ],
-  "right-leg": [
-    "right leg pain",
-    "right leg swelling",
-    "right leg cramps",
-    "right leg numbness",
-    "right leg weakness"
-  ],
-  "left-foot": [
-    "left foot pain",
-    "left foot swelling",
-    "left foot numbness",
-    "left foot tingling",
-    "left foot weakness"
-  ],
-  "right-foot": [
-    "right foot pain",
-    "right foot swelling",
-    "right foot numbness",
-    "right foot tingling",
-    "right foot weakness"
-  ],
-  "left-arm": [
-    "left arm pain",
-    "left arm numbness",
-    "left arm weakness",
-    "left arm tingling",
-    "left arm swelling",
+
+  "arm": [
+    "arm pain",
+    "arm numbness",
+    "arm weakness",
+    "arm tingling",
+    "arm swelling",
     "muscle aches",
     "fatigue"
   ],
-  "right-arm": [
-    "right arm pain",
-    "right arm numbness",
-    "right arm weakness",
-    "right arm tingling",
-    "right arm swelling",
-    "muscle aches",
-    "fatigue"
-  ],
-  "left-hand": [
-    "left hand pain",
-    "left hand numbness",
-    "left hand tingling",
-    "left hand weakness",
-    "left hand stiffness",
-    "weak grip",
-    "hand pain",
-    "night symptoms"
-  ],
-  "right-hand": [
-    "right hand pain",
-    "right hand numbness",
-    "right hand tingling",
-    "right hand weakness",
-    "right hand stiffness",
+
+  "hand": [
+    "pain",
+    "numbness",
+    "tingling",
+    "weakness",
+    "stiffness",
     "weak grip",
     "hand pain",
     "night symptoms"
