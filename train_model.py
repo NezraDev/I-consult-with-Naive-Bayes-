@@ -4,7 +4,7 @@ from sklearn.naive_bayes import MultinomialNB
 from sklearn.preprocessing import MultiLabelBinarizer
 import os
 
-with open('symptoms/disease_symptoms.json', 'r') as f:
+with open('data/diseases/disease_symptoms.json', 'r') as f:
     disease_symptoms = json.load(f)
 
 data = [(symptoms, disease) for disease, symptoms in disease_symptoms.items()]

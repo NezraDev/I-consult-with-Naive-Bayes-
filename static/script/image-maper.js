@@ -10,8 +10,8 @@ $(document).ready(function () {
     fillOpacity: 0.4,
     strokeWidth: 2,
     stroke: true,
-    singleSelect: false, // Allow multiple selection
-    isSelectable: false, // Allow toggling
+    singleSelect: false,
+    isSelectable: false,
     mapKey: "name",
 
     onClick: function (e) {
@@ -19,11 +19,9 @@ $(document).ready(function () {
       const index = window.selectedBodyParts.indexOf(key);
 
       if (index > -1) {
-        // Deselect part
         window.selectedBodyParts.splice(index, 1);
         $("img").mapster("set", false, key);
       } else {
-        // Select part
         window.selectedBodyParts.push(key);
         $("img").mapster("set", true, key);
       }
@@ -32,7 +30,6 @@ $(document).ready(function () {
     },
   });
 
-  // Handle selections from URL
   if (selectedPartsParam) {
     window.selectedBodyParts = selectedPartsParam.split(",");
     window.selectedBodyParts.forEach((part) => {

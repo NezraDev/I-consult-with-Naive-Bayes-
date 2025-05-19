@@ -1,5 +1,5 @@
 {% extends 'base.html' %} {% block body %}
-<main class="col-start-4 col-end-14 row-start-4 row-end-11 ml-5">
+<main class="col-start-4 col-end-14 row-start-3 row-end-11 ml-5">
   <div class="bg-white rounded-lg shadow-md p-6 w-150">
     <h2 class="text-2xl font-bold text-[#0d0521] mb-4 break-words">
       Predicted Disease
@@ -10,7 +10,7 @@
       </h3>
       <div class="flex flex-wrap gap-2">
         {% for part in body_parts %}
-        <span class="px-3 py-1 bg-[#643dff] text-white rounded-full text-sm">
+        <span class="px-3 py-1 bg-[#643dff] text-white rounded-md text-xs p-2">
           {{ part.replace('-', ' ') | title }}
         </span>
         {% endfor %}
@@ -48,15 +48,9 @@
     <div class="flex space-x-4">
       <a
         href="/diagnosis"
-        class="inline-block bg-[#643dff] hover:bg-[#4703bb] text-white px-6 py-2 rounded-md transition"
+        class="inline-block bg-[#643dff] hover:bg-[#4703bb] text-white px-6 py-2 rounded-md transition text-md"
       >
-        Back to Symptoms
-      </a>
-      <a
-        href="/"
-        class="inline-block bg-gray-200 hover:bg-gray-300 text-gray-800 px-6 py-2 rounded-md transition"
-      >
-        Start Over
+        Back to Body Model
       </a>
     </div>
   </div>
