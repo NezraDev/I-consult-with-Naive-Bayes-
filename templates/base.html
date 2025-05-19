@@ -106,9 +106,7 @@
           />
           <div class="flex flex-col w-[60%] gap-1 text-xs">
             <span>Current step</span>
-            <span class="text-[#643dff] font-semibold"
-              >Symptoms description</span
-            >
+            <span class="text-[#643dff] font-semibold">Select Body Part</span>
           </div>
         </div>
         <div class="flex items-center justify-around">
@@ -118,7 +116,9 @@
           />
           <div class="flex flex-col w-[60%] gap-1 text-xs">
             <span>Step 2</span>
-            <span class="text-[#643dff] font-semibold">Medical history</span>
+            <span class="text-[#643dff] font-semibold"
+              >Symptoms Description</span
+            >
           </div>
         </div>
         <div class="flex items-center justify-around">
@@ -129,7 +129,7 @@
           <div class="flex flex-col w-[60%] gap-1 text-xs">
             <span>Step 3</span>
             <span class="text-[#643dff] font-semibold"
-              >AI condition assessment</span
+              >Naive Bayes Assessment</span
             >
           </div>
         </div>
@@ -140,9 +140,7 @@
           />
           <div class="flex flex-col w-[60%] gap-1 text-xs">
             <span>Step 4</span>
-            <span class="text-[#643dff] font-semibold"
-              >Hospital and doctor recommendation</span
-            >
+            <span class="text-[#643dff] font-semibold">Disease Prediction</span>
           </div>
         </div>
         <div class="flex items-center justify-around">
@@ -167,6 +165,9 @@
         </button>
       </a>
     </section>
-    {% block script %} {% endblock %}
+    {% block script %}
+    <script src="{{ url_for('static', filename='script/proceed.js') }}"></script>
   </body>
 </html>
+
+{% endblock %}

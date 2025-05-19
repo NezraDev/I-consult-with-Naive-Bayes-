@@ -1,9 +1,64 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body></body>
-</html>
+{% extends 'base.html' %} {% block body %}
+<main class="col-start-4 col-end-14 row-start-4 row-end-11 ml-5">
+  <div class="bg-white rounded-lg shadow-md p-6 w-150">
+    <h2 class="text-2xl font-bold text-[#0d0521] mb-4 break-words">
+      Predicted Disease
+    </h2>
+    <div class="mb-6 p-4 bg-gray-50 rounded-lg">
+      <h3 class="text-lg font-semibold text-gray-700 mb-2">
+        Selected Body Parts:
+      </h3>
+      <div class="flex flex-wrap gap-2">
+        {% for part in body_parts %}
+        <span class="px-3 py-1 bg-[#643dff] text-white rounded-full text-sm">
+          {{ part.replace('-', ' ') | title }}
+        </span>
+        {% endfor %}
+      </div>
+    </div>
+
+    <div class="mb-6 p-4 bg-blue-50 rounded-lg">
+      <p class="text-lg break-words">
+        <strong class="text-[#0d0521]">{{ top_disease }}</strong> with
+        <strong class="text-[#643dff]">{{ top_prob }}%</strong> confidence.
+      </p>
+    </div>
+
+    <h3 class="text-xl font-semibold text-gray-700 mb-2 break-words">
+      Other Possible Conditions
+    </h3>
+    <div class="mb-6">
+      <ul class="space-y-2">
+        {% for disease, prob in all_probs[1:6] %}
+        <li class="p-3 bg-gray-50 rounded-lg hover:bg-gray-100 transition">
+          <div class="flex justify-between items-center">
+            <span class="font-medium text-gray-800 break-words"
+              >{{ disease }}</span
+            >
+            <span class="text-[#643dff] font-semibold">{{ prob }}%</span>
+          </div>
+          <div class="w-full bg-gray-200 rounded-full h-2 mt-2">
+            <div class="bg-[#643dff] h-2 rounded-full"></div>
+          </div>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+
+    <div class="flex space-x-4">
+      <a
+        href="/diagnosis"
+        class="inline-block bg-[#643dff] hover:bg-[#4703bb] text-white px-6 py-2 rounded-md transition"
+      >
+        Back to Symptoms
+      </a>
+      <a
+        href="/"
+        class="inline-block bg-gray-200 hover:bg-gray-300 text-gray-800 px-6 py-2 rounded-md transition"
+      >
+        Start Over
+      </a>
+    </div>
+  </div>
+</main>
+{% endblock %}

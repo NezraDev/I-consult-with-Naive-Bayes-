@@ -1,1 +1,40 @@
-{% extends 'base.html' %} {% block body%} {% endblock %}
+{% extends 'base.html' %} {% block body %}
+<main class="col-start-4 col-end-14 row-start-4 row-end-11 ml-5">
+  <div class="bg-white rounded-lg shadow-md p-6 w-160">
+    <h1 class="text-2xl font-bold mb-4">
+      Symptoms for {% for part in body_parts %}{{ part.replace('-', ' ') }}{% if
+      not loop.last %}, {% endif %}{% endfor %}
+    </h1>
+    <form action="{{ url_for('predict') }}" method="post">
+      <!-- Pass selected body parts as hidden inputs -->
+      {% for part in body_parts %}
+      <input type="hidden" name="body_parts[]" value="{{ part }}" />
+      {% endfor %}
+
+      <div class="mb-6">
+        <h2 class="text-lg font-semibold mb-3">Select your symptoms:</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
+          {% for symptom in symptoms %}
+          <div class="flex items-center">
+            <input
+              type="checkbox"
+              id="symptom-{{ loop.index }}"
+              name="symptoms[]"
+              value="{{ symptom }}"
+              class="mr-2"
+            />
+            <label for="symptom-{{ loop.index }}">{{ symptom }}</label>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+      <button
+        type="submit"
+        class="bg-[#643dff] text-white py-2 px-6 rounded-lg hover:bg-[#4703bb] transition"
+      >
+        Get Diagnosis
+      </button>
+    </form>
+  </div>
+</main>
+{% endblock %}

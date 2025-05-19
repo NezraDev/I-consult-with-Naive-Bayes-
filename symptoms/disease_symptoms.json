@@ -1,60 +1,219 @@
 {
-  "Flu": [
-    ["fever", "cough"],
-    ["fever", "cough", "sore throat"],
-    ["cough", "sore throat"]
-  ],
+  "Flu": ["fever", "cough", "sore throat", "muscle aches", "fatigue"],
+
   "Migraine": [
-    ["headache", "blurred vision"],
-    ["headache", "nausea"],
-    ["headache", "light sensitivity"]
+    "headache",
+    "light sensitivity",
+    "nausea",
+    "dizziness",
+    "blurred vision",
+    "vision changes"
   ],
-  "Measles": [
-    ["fever", "rash"],
-    ["rash", "runny nose"]
+
+  "Ear Infection": [
+    "left ear pain",
+    "left hearing loss",
+    "left ear discharge",
+    "left ear itching",
+    "left ear fullness",
+    "right ear pain",
+    "right hearing loss",
+    "right ear discharge",
+    "right ear itching",
+    "right ear fullness"
   ],
+
+  "Neck Strain": [
+    "neck pain",
+    "neck stiffness",
+    "neck swelling",
+    "neck spasms",
+    "neck tenderness"
+  ],
+
   "Heart Disease": [
-    ["chest pain", "shortness of breath"],
-    ["chest pain", "fatigue"]
+    "chest pain",
+    "shortness of breath",
+    "palpitations",
+    "fatigue",
+    "chest tightness",
+    "chest pressure"
   ],
+
   "Diabetes": [
-    ["fatigue", "weight loss", "frequent urination"],
-    ["frequent urination", "blurred vision"]
+    "frequent urination",
+    "blurred vision",
+    "fatigue",
+    "numbness",
+    "slow healing"
   ],
+
   "Food Poisoning": [
-    ["nausea", "vomiting", "diarrhea"],
-    ["vomiting", "stomach pain"]
+    "abdominal pain",
+    "nausea",
+    "vomiting",
+    "diarrhea",
+    "bloating"
   ],
-  "Allergy": [
-    ["itchy eyes", "sneezing", "runny nose"],
-    ["sneezing", "itchy eyes"]
+
+  "Right Shoulder Injury": [
+    "right shoulder pain",
+    "right shoulder stiffness",
+    "right shoulder weakness",
+    "right shoulder popping",
+    "right shoulder swelling"
   ],
-  "Arthritis": [
-    ["joint pain", "stiffness", "swelling"],
-    ["joint pain", "morning stiffness"]
+
+  "Left Shoulder Injury": [
+    "left shoulder pain",
+    "left shoulder stiffness",
+    "left shoulder weakness",
+    "left shoulder popping",
+    "left shoulder swelling"
   ],
-  "IBS": [
-    ["abdominal pain", "bloating", "constipation"],
-    ["bloating", "gas", "diarrhea"]
+
+  "UTI": [
+    "pelvic pain",
+    "urinary urgency",
+    "painful urination",
+    "pelvic pressure",
+    "pelvic heaviness"
   ],
-  "Common Cold": [
-    ["sore throat", "cough", "runny nose"],
-    ["sore throat", "congestion"]
+
+  "Right Thigh Syndrome": [
+    "right thigh pain",
+    "right thigh numbness",
+    "right thigh swelling",
+    "right thigh weakness",
+    "right thigh cramping"
   ],
-  "Dengue": [
-    ["high fever", "muscle pain", "bleeding"],
-    ["fever", "rash", "joint pain"]
+
+  "Left Thigh Syndrome": [
+    "left thigh pain",
+    "left thigh numbness",
+    "left thigh swelling",
+    "left thigh weakness",
+    "left thigh cramping"
   ],
-  "Alzheimer's Disease": [
-    ["memory loss", "confusion"],
-    ["confusion", "difficulty speaking"]
+
+  "Left Knee Condition": [
+    "left knee pain",
+    "left knee swelling",
+    "left knee stiffness",
+    "left knee instability",
+    "left knee clicking"
   ],
-  "Anxiety Disorder": [
-    ["anxiety", "insomnia", "palpitations"],
-    ["restlessness", "palpitations"]
+
+  "Right Knee Condition": [
+    "right knee pain",
+    "right knee swelling",
+    "right knee stiffness",
+    "right knee instability",
+    "right knee clicking"
   ],
+
+  "Left Leg Disorder": [
+    "left leg pain",
+    "left leg swelling",
+    "left leg cramps",
+    "left leg numbness",
+    "left leg weakness"
+  ],
+
+  "Right Leg Disorder": [
+    "right leg pain",
+    "right leg swelling",
+    "right leg cramps",
+    "right leg numbness",
+    "right leg weakness"
+  ],
+
+  "Left Foot Disorder": [
+    "left foot pain",
+    "left foot swelling",
+    "left foot numbness",
+    "left foot tingling",
+    "left foot weakness"
+  ],
+
+  "Right Foot Disorder": [
+    "right foot pain",
+    "right foot swelling",
+    "right foot numbness",
+    "right foot tingling",
+    "right foot weakness"
+  ],
+
+  "Left Arm Condition": [
+    "left arm pain",
+    "left arm numbness",
+    "left arm weakness",
+    "left arm tingling",
+    "left arm swelling"
+  ],
+
+  "Right Arm Condition": [
+    "right arm pain",
+    "right arm numbness",
+    "right arm weakness",
+    "right arm tingling",
+    "right arm swelling"
+  ],
+
+  "Left Hand Condition": [
+    "left hand pain",
+    "left hand numbness",
+    "left hand tingling",
+    "left hand weakness",
+    "left hand stiffness"
+  ],
+
+  "Right Hand Condition": [
+    "right hand pain",
+    "right hand numbness",
+    "right hand tingling",
+    "right hand weakness",
+    "right hand stiffness"
+  ],
+
+  "Neuropathy": [
+    "numbness",
+    "tingling",
+    "burning pain",
+    "muscle weakness",
+    "sensitivity"
+  ],
+
+  "Carpal Tunnel": [
+    "hand numbness",
+    "tingling",
+    "weak grip",
+    "hand pain",
+    "night symptoms"
+  ],
+
+  "Alzheimer's": [
+    "memory loss",
+    "confusion",
+    "difficulty speaking",
+    "mood swings",
+    "disorientation",
+    "memory problems"
+  ],
+
+  "Anxiety": [
+    "palpitations",
+    "restlessness",
+    "sweating",
+    "trembling",
+    "chest tightness"
+  ],
+
   "Depression": [
-    ["depressed mood", "loss of interest", "fatigue"],
-    ["fatigue", "hopelessness"]
+    "persistent sadness",
+    "loss of interest",
+    "fatigue",
+    "sleep changes",
+    "appetite changes"
   ]
 }
