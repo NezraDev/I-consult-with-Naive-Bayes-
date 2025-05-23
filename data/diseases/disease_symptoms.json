@@ -1,154 +1,147 @@
 {
-  "Flu": ["fever", "cough", "sore throat", "muscle aches", "fatigue"],
-
-  "Migraine": [
-    "headache",
-    "light sensitivity",
-    "nausea",
-    "dizziness",
-    "blurred vision",
-    "vision changes"
+  "Common Cold": [
+    ["runny nose", "sore throat", "cough"],
+    ["sneezing", "congestion", "mild headache"],
+    ["congestion", "runny nose", "mild headache"],
+    ["cough", "sneezing", "runny nose"],
+    ["sore throat", "congestion", "cough"],
+    ["sneezing", "fatigue", "runny nose"],
+    ["congestion", "sore throat", "fatigue"],
+    ["runny nose", "cough", "fatigue"],
+    ["mild headache", "sneezing", "sore throat"],
+    ["sneezing", "ear pain", "fatigue"],
+    ["congestion", "ringing in ears", "mild headache"]
   ],
 
-  "Ear Infection": [
-    "ear pain",
-    "hearing loss",
-    "ear discharge",
-    "ear itching",
-    "ear fullness"
+  "Influenza": [
+    ["fever", "fatigue", "cough", "sore throat"],
+    ["muscle aches", "headache", "runny nose"],
+    ["fatigue", "chills", "fever", "cough"],
+    ["cough", "fever", "headache", "muscle aches"],
+    ["sore throat", "cough", "muscle aches"],
+    ["fatigue", "fever", "runny nose"],
+    ["chills", "headache", "sore throat"],
+    ["muscle aches", "cough", "chills"],
+    ["fever", "fatigue", "headache"],
+    ["runny nose", "sore throat", "fatigue"],
+    ["dizziness", "nausea", "fever", "muscle aches"],
+    ["chills", "vomiting", "headache"]
   ],
 
-  "Neck Strain": [
-    "neck pain",
-    "neck stiffness",
-    "neck swelling",
-    "neck spasms",
-    "neck tenderness"
+  "Diabetes Mellitus": [
+    ["frequent urination", "increased thirst", "fatigue"],
+    ["blurred vision", "slow healing wounds", "weight loss"],
+    ["increased hunger", "numbness in hands or feet", "dry mouth"],
+    ["fatigue", "frequent infections", "dark skin patches"],
+    ["weight loss", "increased thirst", "frequent urination"],
+    ["numbness in hands or feet", "fatigue", "slow healing wounds"],
+    ["increased hunger", "dark skin patches", "weight loss"],
+    ["frequent infections", "dry mouth", "increased thirst"],
+    ["frequent urination", "weight loss", "fatigue"],
+    ["slow healing wounds", "frequent urination", "dark skin patches"],
+    ["dry mouth", "increased hunger", "frequent infections"],
+    ["tingling in feet", "blurred vision", "fatigue"],
+    ["numbness in legs", "increased thirst", "slow healing wounds"]
+  ],
+
+  "Hypertension": [
+    ["headache", "dizziness", "nosebleeds"],
+    ["fatigue", "blurred vision", "chest pain"],
+    ["shortness of breath", "palpitations", "headache"],
+    ["dizziness", "fatigue", "chest pain"],
+    ["blurred vision", "palpitations", "headache"],
+    ["palpitations", "nosebleeds", "dizziness"],
+    ["chest pain", "fatigue", "shortness of breath"],
+    ["headache", "blurred vision", "dizziness"],
+    ["fatigue", "palpitations", "chest pain"],
+    ["nosebleeds", "chest pain", "fatigue"],
+    ["shortness of breath", "dizziness", "palpitations"],
+    ["nausea", "blurred vision", "headache"],
+    ["chest tightness", "dizziness", "fatigue"]
+  ],
+
+  "Tuberculosis": [
+    ["persistent cough", "weight loss", "fever"],
+    ["night sweats", "fatigue", "cough with blood"],
+    ["fever", "chest pain", "weight loss"],
+    ["persistent cough", "night sweats", "fatigue"],
+    ["cough with blood", "fever", "chest pain"],
+    ["weight loss", "night sweats", "fever"],
+    ["fatigue", "persistent cough", "chest pain"],
+    ["cough with blood", "night sweats", "weight loss"],
+    ["fever", "fatigue", "persistent cough"],
+    ["chest pain", "night sweats", "fatigue"],
+    ["chills", "persistent cough", "weight loss"],
+    ["muscle aches", "fever", "night sweats"]
+  ],
+
+  "Malaria": [
+    ["fever", "chills", "sweating"],
+    ["headache", "muscle pain", "fatigue"],
+    ["nausea", "vomiting", "fever"],
+    ["chills", "fatigue", "sweating"],
+    ["muscle pain", "headache", "fever"],
+    ["fever", "fatigue", "nausea"],
+    ["chills", "vomiting", "muscle pain"],
+    ["headache", "sweating", "fatigue"],
+    ["nausea", "chills", "headache"],
+    ["dizziness", "fever", "muscle aches"],
+    ["abdominal pain", "chills", "vomiting"]
+  ],
+
+  "HIV/AIDS": [
+    ["fever", "fatigue", "weight loss"],
+    ["night sweats", "swollen lymph nodes", "muscle aches"],
+    ["rash", "sore throat", "headache"],
+    ["fatigue", "fever", "swollen lymph nodes"],
+    ["weight loss", "night sweats", "rash"],
+    ["muscle aches", "rash", "fatigue"],
+    ["fever", "headache", "weight loss"],
+    ["sore throat", "night sweats", "fatigue"],
+    ["swollen lymph nodes", "rash", "weight loss"],
+    ["diarrhea", "fever", "swollen lymph nodes"],
+    ["nausea", "night sweats", "rash"]
+  ],
+
+  "Diarrheal Diseases": [
+    ["diarrhea", "abdominal cramps", "dehydration"],
+    ["nausea", "vomiting", "fever"],
+    ["loose stools", "fatigue", "abdominal pain"],
+    ["diarrhea", "fever", "fatigue"],
+    ["vomiting", "abdominal cramps", "loose stools"],
+    ["abdominal pain", "dehydration", "fever"],
+    ["nausea", "diarrhea", "fatigue"],
+    ["vomiting", "loose stools", "abdominal cramps"],
+    ["fever", "diarrhea", "abdominal cramps"],
+    ["fatigue", "vomiting", "dehydration"],
+    ["muscle aches", "nausea", "abdominal pain"],
+    ["dizziness", "dehydration", "fatigue"]
+  ],
+
+  "Asthma": [
+    ["wheezing", "shortness of breath", "cough"],
+    ["chest tightness", "wheezing", "fatigue"],
+    ["shortness of breath", "cough", "chest tightness"],
+    ["wheezing", "cough", "chest tightness"],
+    ["fatigue", "shortness of breath", "wheezing"],
+    ["cough", "fatigue", "chest tightness"],
+    ["wheezing", "shortness of breath", "fatigue"],
+    ["chest tightness", "cough", "wheezing"],
+    ["palpitations", "shortness of breath", "wheezing"],
+    ["chest pain", "cough", "fatigue"]
   ],
 
   "Heart Disease": [
-    "chest pain",
-    "shortness of breath",
-    "palpitations",
-    "fatigue",
-    "chest tightness",
-    "chest pressure"
-  ],
-
-  "Diabetes": [
-    "frequent urination",
-    "blurred vision",
-    "fatigue",
-    "numbness",
-    "slow healing"
-  ],
-
-  "Food Poisoning": [
-    "abdominal pain",
-    "nausea",
-    "vomiting",
-    "diarrhea",
-    "bloating"
-  ],
-
-  "Shoulder Injury": [
-    "shoulder pain",
-    "shoulder stiffness",
-    "shoulder weakness",
-    "shoulder popping",
-    "shoulder swelling"
-  ],
-
-  "UTI": [
-    "pelvic pain",
-    "urinary urgency",
-    "painful urination",
-    "pelvic pressure",
-    "pelvic heaviness"
-  ],
-
-  "Thigh Syndrome": [
-    "thigh pain",
-    "thigh numbness",
-    "thigh swelling",
-    "thigh weakness",
-    "thigh cramping"
-  ],
-
-  "Knee Condition": [
-    "knee pain",
-    " knee swelling",
-    " knee stiffness",
-    " knee instability",
-    " knee clicking"
-  ],
-
-  "Leg Disorder": [
-    "leg pain",
-    "leg swelling",
-    "leg cramps",
-    "leg numbness",
-    "leg weakness"
-  ],
-
-  "Foot Disorder": [
-    "foot pain",
-    "foot swelling",
-    "foot numbness",
-    "foot tingling",
-    "foot weakness"
-  ],
-
-  "Arm Condition": [
-    "arm pain",
-    "arm numbness",
-    "arm weakness",
-    "arm tingling",
-    "arm swelling",
-    "muscle aches",
-    "fatigue"
-  ],
-
-  "Hand Condition": ["pain", "numbness", "tingling", "weakness", "stiffness"],
-
-  "Neuropathy": [
-    "numbness",
-    "tingling",
-    "burning pain",
-    "muscle weakness",
-    "sensitivity"
-  ],
-
-  "Carpal Tunnel": [
-    "hand numbness",
-    "tingling",
-    "weak grip",
-    "hand pain",
-    "night symptoms"
-  ],
-
-  "Alzheimer's": [
-    "memory loss",
-    "confusion",
-    "difficulty speaking",
-    "mood swings",
-    "disorientation",
-    "memory problems"
-  ],
-
-  "Anxiety": [
-    "palpitations",
-    "restlessness",
-    "sweating",
-    "trembling",
-    "chest tightness"
-  ],
-
-  "Depression": [
-    "persistent sadness",
-    "loss of interest",
-    "fatigue",
-    "sleep changes",
-    "appetite changes"
+    ["chest pain", "shortness of breath", "fatigue"],
+    ["palpitations", "dizziness", "chest pain"],
+    ["shortness of breath", "fatigue", "swelling legs"],
+    ["dizziness", "chest pain", "fatigue"],
+    ["palpitations", "chest pain", "shortness of breath"],
+    ["swelling legs", "dizziness", "fatigue"],
+    ["chest pain", "palpitations", "swelling legs"],
+    ["fatigue", "dizziness", "shortness of breath"],
+    ["palpitations", "swelling legs", "dizziness"],
+    ["numbness in arms", "chest pain", "shortness of breath"],
+    ["arm pain", "palpitations", "fatigue"]
   ]
 }

@@ -1,13 +1,14 @@
 from flask import Flask, render_template, request, redirect, url_for
 import pickle
 import json
-from collections import defaultdict
 
 app = Flask(__name__)
 
+# Load model and binarizer
 with open('model/naive_bayes_model.pkl', 'rb') as f:
     model, mlb = pickle.load(f)
 
+# Load data
 with open('data/diseases/disease_symptoms.json') as f:
     symptoms_data = json.load(f)
 
@@ -16,7 +17,8 @@ with open('data/bodypart/body_part_symptoms.json') as f:
 
 @app.route('/')
 def home():
-    return render_template('index.html', body_parts=body_part_symptoms.keys())
+    return render_template('index.html',
+                           body_parts=body_part_symptoms.keys())
 
 @app.route("/diagnosis")
 def diagnosis():
@@ -26,27 +28,22 @@ def diagnosis():
 @app.route("/assessment", methods=['GET'])
 def assessment():
     selected_parts = request.args.get('part', '').split(',')
-    
+
     if not selected_parts or selected_parts == ['']:
         return redirect(url_for('home'))
 
     symptoms = []
     for part in selected_parts:
         symptoms.extend(body_part_symptoms.get(part, []))
-    
-    print("All symptoms for", selected_parts, ":", symptoms)
-    
+
     valid_symptoms = [s for s in symptoms if s in mlb.classes_]
-    print("Valid symptoms:", valid_symptoms)
-    
+
     possible_diseases = {
         disease
         for disease, symptom_list in symptoms_data.items()
         if any(s in symptom_list for s in valid_symptoms)
     }
-    
-    print("Possible diseases:", possible_diseases)
-    
+
     return render_template(
         'assessment.html',
         body_parts=selected_parts,
@@ -60,10 +57,10 @@ def predict():
     body_parts = request.form.getlist('body_parts[]')
 
     if not symptoms:
-        return redirect(url_for('home'))  
+        return redirect(url_for('home'))
 
     try:
-        input_vector = mlb.transform([symptoms]) 
+        input_vector = mlb.transform([symptoms])
         probabilities = model.predict_proba(input_vector)[0]
         classes = model.classes_
 

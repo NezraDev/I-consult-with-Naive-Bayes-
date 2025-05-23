@@ -1,116 +1,57 @@
 {
   "head": [
+    "runny nose",
+    "sore throat",
+    "mild headache",
+    "congestion",
+    "sneezing",
+    "fatigue",
+    "cough",
+    "fever",
+    "muscle aches",
     "headache",
-    "light sensitivity",
-    "nausea",
+    "chills",
     "dizziness",
     "blurred vision",
-    "vision changes",
-    "memory loss",
-    "confusion",
-    "difficulty speaking",
-    "mood swings",
-    "disorientation",
-    "memory problems",
-    "restlessness",
-    "persistent sadness",
-    "loss of interest",
-    "sleep changes",
-    "appetite changes"
+    "nosebleeds",
+    "nausea",
+    "vomiting",
+    "rash"
   ],
-
-  "ear": [
-    "ear pain",
-    "hearing loss",
-    "ear discharge",
-    "ear itching",
-    "ear fullness"
-  ],
-  "neck": [
-    "pain",
-    "stiffness",
-    "swelling",
-    "spasms",
-    "tenderness",
-    "sore throat"
-  ],
+  "ear": ["sneezing", "ear pain", "ringing in ears"],
+  "neck": ["sore throat", "swollen lymph nodes"],
   "chest": [
-    "pain",
-    "tightness",
+    "cough",
+    "congestion",
+    "sneezing",
+    "fever",
+    "muscle aches",
+    "chills",
+    "sore throat",
+    "chest pain",
     "shortness of breath",
     "palpitations",
-    "pressure",
-    "sweating",
-    "trembling"
+    "persistent cough",
+    "cough with blood",
+    "wheezing",
+    "chest tightness"
   ],
-
-  "shoulder": [
-    "shoulder pain",
-    "shoulder stiffness",
-    "shoulder weakness",
-    "shoulder popping",
-    "shoulder swelling"
+  "shoulder": [],
+  "abdominal": [
+    "diarrhea",
+    "abdominal cramps",
+    "dehydration",
+    "loose stools",
+    "abdominal pain",
+    "nausea",
+    "vomiting",
+    "fever"
   ],
-  "abdominal": ["abdominal pain", "bloating", "nausea", "vomiting", "diarrhea"],
-  "pelvic": [
-    "pelvic pain",
-    "urinary urgency",
-    "painful urination",
-    "pelvic pressure",
-    "pelvic heaviness",
-    "frequent urination"
-  ],
-
-  "thigh": [
-    "thigh pain",
-    "thigh numbness",
-    "thigh swelling",
-    "thigh weakness",
-    "thigh cramping"
-  ],
-
-  "knee": [
-    "knee pain",
-    " knee swelling",
-    " knee stiffness",
-    " knee instability",
-    " knee clicking"
-  ],
-
-  "leg": [
-    "leg pain",
-    "leg swelling",
-    "leg cramps",
-    "leg numbness",
-    "leg weakness"
-  ],
-
-  "foot": [
-    "foot pain",
-    "foot swelling",
-    "foot numbness",
-    "foot tingling",
-    "foot weakness"
-  ],
-
-  "arm": [
-    "arm pain",
-    "arm numbness",
-    "arm weakness",
-    "arm tingling",
-    "arm swelling",
-    "muscle aches",
-    "fatigue"
-  ],
-
-  "hand": [
-    "pain",
-    "numbness",
-    "tingling",
-    "weakness",
-    "stiffness",
-    "weak grip",
-    "hand pain",
-    "night symptoms"
-  ]
+  "pelvic": ["frequent urination"],
+  "thigh": [],
+  "knee": [],
+  "leg": ["swelling legs", "numbness in legs"],
+  "foot": ["foot pain", "tingling in feet", "numbness in hands or feet"],
+  "arm": ["numbness in hands or arms", "arm pain"],
+  "hand": ["numbness in hands", "tingling in fingers"]
 }
